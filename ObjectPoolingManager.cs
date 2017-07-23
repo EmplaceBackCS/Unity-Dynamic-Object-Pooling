@@ -151,7 +151,7 @@ namespace EmplaceBackCS
 					if (tempParent != null)
 					{
 						//To keep the editor clean
-						newObject.transform.parent = GameObject.Find(prefabName + " Pool").transform;
+						newObject.transform.parent = tempParent.transform;
 
 						//To see how many total we have after expanding...
 						Debug.Log("Added another object to the pool " +
