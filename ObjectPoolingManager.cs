@@ -22,7 +22,7 @@ namespace EmplaceBackCS
 		[Space(5, order = 3)]
 		[SerializeField]
 		private string filePath = "EMPTY"; //To find our file path inside resoruces to get our prefabs
-										   //======== Bools =======
+		//======== Bools =======
 		[Header("This will make it so if we run out of objects, we'll create a new one and add it to our pool")]
 		[SerializeField]
 		private bool dynamic = true;
