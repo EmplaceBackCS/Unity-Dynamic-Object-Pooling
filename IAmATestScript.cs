@@ -30,7 +30,7 @@ namespace EmplaceBackCS
 
 		}
 
-		//Just to check when we should disable thi
+		//Just to check when we should disable this
 		void checkTimer()
 		{
 			if (timer <= 0.0f)
