@@ -29,7 +29,7 @@ namespace EmplaceBackCS
 		//======== Object of our class above ======
 		public PooledObject[] pooledObjects;
 		//======== Lists ========
-		[HideInInspector] public List<GameObject> listOfPooledObjects = new List<GameObject>();
+		private List<GameObject> listOfPooledObjects = new List<GameObject>();
 		//====Ref of this object... =====
 		public static ObjectPoolingManager instance;
 
