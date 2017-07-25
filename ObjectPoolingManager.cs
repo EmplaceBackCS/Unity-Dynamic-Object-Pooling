@@ -118,7 +118,7 @@ namespace EmplaceBackCS
 
 		//============== get pooled object! ========
 		//Will search like a rows/columns. This is because we can have many objects in our pool
-		public GameObject getetPooledObject(string prefabName)
+		public GameObject getPooledObject(string prefabName)
 		{
 			//First we'll loop through every game object we put into the manager
 			for (int y = 0; y < pooledObjects.Count; y++)
