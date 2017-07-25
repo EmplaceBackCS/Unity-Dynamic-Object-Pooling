@@ -93,15 +93,6 @@ namespace EmplaceBackCS
 		//====Ref of this object... =====
 		public static ObjectPoolingManager instance;
 
-		private void OnValidate()
-		{
-			if(pooledObjects.Count > 0)
-			{
-				Debug.LogError("Don't touch this! This is suppose to just be a visual aid to see how many objects you have pooled when dynamic is checked and such.");
-				pooledObjects.Clear();
-			}
-		}
-
 		//Set up our singlton to this on our awake!
 		private void Awake()
 		{
@@ -129,11 +120,9 @@ namespace EmplaceBackCS
 		//Will search like a rows/columns. This is because we can have many objects in our pool
 		public GameObject getetPooledObject(string prefabName)
 		{
-			int temp = 0;
 			//First we'll loop through every game object we put into the manager
 			for (int y = 0; y < pooledObjects.Count; y++)
 			{
-				temp++;
 				//To simply just search for the name of the prefab.
 				if (pooledObjects[y].prefab.name == prefabName)
 				{
@@ -147,7 +136,6 @@ namespace EmplaceBackCS
 					}
 				}
 			}
-			Debug.Log("Loop times: " + temp);
 			//If we are dynamic and want to incrase the size, we'll do so here
 			if (dynamic)
 			{
