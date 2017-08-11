@@ -45,7 +45,7 @@ namespace EmplaceBackCS
 		void getObject1()
 		{
 			GameObject temp = objectPoolManager.getPooledObject("ImATest");
-			//If our temp is null, well, we spelled the name wrong!
+			//If our temp is null, well, well we aren't dynamic and there was non inactive!
 			//And so we'll return so nothing happens
 			if (temp == null) return;
 			//We'll set it active to true here and then see the reused object!
@@ -58,7 +58,7 @@ namespace EmplaceBackCS
 		void getObject2()
 		{
 			GameObject temp = objectPoolManager.getPooledObject("ImATest2");
-			//If our temp is null, well, we spelled the name wrong!
+			//If our temp is null, well, well we aren't dynamic and there was non inactive!
 			//And so we'll return so nothing happens
 			if (temp == null) return;
 			//We'll set it active to true here and then see the reused object!
