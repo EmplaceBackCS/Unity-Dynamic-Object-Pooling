@@ -138,11 +138,11 @@ namespace EmplaceBackCS
 						{
 							return pooledObjects[y].pooledObjectList[x];
 						}
-						//Once we get here, we know that we don't have to loop anymore on our outter loop
-						//So we'll set y to the size of the list, that way once we exit and if we find no inactive object
-						//We won't do any unnecessary searching.
-						y = pooledObjects.Count - 1;
 					}
+					//Once we get here, we know that we don't have to loop anymore on our outter loop
+					//So we'll set y to the size of the list, that way once we exit and if we find no inactive object
+					//We won't do any unnecessary searching.
+					y = pooledObjects.Count - 1;
 				}
 			}
 			//If we are dynamic and want to incrase the size, we'll do so here
