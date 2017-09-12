@@ -33,7 +33,7 @@ namespace EmplaceBackCS
 		void moveAndScaleObject()
 		{
 			this.transform.Translate(-Vector3.forward * Time.fixedDeltaTime * speed);
-			this.transform.localScale += scaleSize * Time.deltaTime;
+			this.transform.localScale += scaleSize * Time.fixedDeltaTime;
 
 		}
 
