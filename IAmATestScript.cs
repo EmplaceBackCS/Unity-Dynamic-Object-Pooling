@@ -12,8 +12,9 @@ namespace EmplaceBackCS
 	{
 		//A timer before we 'destroy' this game object
 		float timer = 5.0f;
+		float speed = 0.4f;
 		Vector3 scaleSize = new Vector3(0.5f, 0.5f, 0.5f);
-
+		
 		private void Update()
 		{
 			//Just going to move this foward and incrase it's size
@@ -25,7 +26,7 @@ namespace EmplaceBackCS
 		//MoveAndScale this object
 		void moveAndScaleObject()
 		{
-			this.transform.Translate(-Vector3.forward * Time.fixedDeltaTime * 0.4f);
+			this.transform.Translate(-Vector3.forward * Time.fixedDeltaTime * speed);
 			this.transform.localScale += scaleSize * Time.deltaTime;
 
 		}
