@@ -12,8 +12,14 @@ namespace EmplaceBackCS
 	{
 		//A timer before we 'destroy' this game object
 		float timer = 5.0f;
+		float defaultTimer;
 		float speed = 0.4f;
 		Vector3 scaleSize = new Vector3(0.5f, 0.5f, 0.5f);
+		
+		void Start()
+		{
+			defaultTimer = timer;
+		}
 		
 		private void Update()
 		{
@@ -48,7 +54,7 @@ namespace EmplaceBackCS
 		private void OnDisable()
 		{
 			this.transform.localScale = Vector3.one;
-			timer = 5.0f;
+			timer = defaultTimer;
 		}
 	}
 }
