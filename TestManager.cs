@@ -25,9 +25,13 @@ namespace EmplaceBackCS
 		// Update is called once per frame
 		void Update()
 		{
-			//Testing purposes, using our object pooling here...
-			//Here you'll want to reuse your object, so you can put the name of the object you put in.
-			//Such as Bullet, Ai, whatever you want! My example was just a ImATest/2/3
+			handleInput();
+		}
+		
+		
+		//===== Small function to handle our input =====
+		void handleInput()
+		{
 			if (Input.GetKeyDown(KeyCode.Alpha1))
 			{
 				getObject1();
@@ -39,7 +43,7 @@ namespace EmplaceBackCS
 				getObject2();
 			}
 		}
-
+		
 		//==== Get test object 1=====
 		//Just will grab prefab 1 to test objectpooling
 		void getObject1()
