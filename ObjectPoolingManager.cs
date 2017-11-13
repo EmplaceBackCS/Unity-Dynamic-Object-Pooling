@@ -1,4 +1,10 @@
-﻿using System.Collections;
+/* Copyright (C) EmplaceBackCS, Inc - All Rights Reserved
+*  | File name "ObjectPoolingManager.cs" |
+*  Unauthorized copying of this file, via any medium is strictly prohibited
+*  Proprietary and confidential
+*  Written by Cesar Saucedo <Csaucedos25@gmail.com>,  [2017] - [2018] 
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
