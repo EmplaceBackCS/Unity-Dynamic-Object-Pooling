@@ -1,4 +1,4 @@
-/* Copyright (C) EmplaceBackCS, Inc - All Rights Reserved
+/* Copyright (C) Cesar Saucedo - All Rights Reserved
 *  | File name "ObjectPoolingManager.cs" |
 *  Unauthorized copying of this file, via any medium is strictly prohibited
 *  Proprietary and confidential
